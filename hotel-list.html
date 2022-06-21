@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="Wafflestay">
+    <meta name="viewport" content="Wafflestay">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>당신의 여행지갑 - 와플스테이</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/animated-headline.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- start cssload-loader -->
+<div class="preloader" id="preloader">
+    <div class="loader">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+</div>
+<!-- end cssload-loader -->
+
+<a href="http://wafflestay.kr" target="_blank" class="rtl-btn">Wafflestay APP</a>
+
+<!-- ================================
+            START HEADER AREA
+================================= -->
+<header class="header-area">
+    <div class="header-top-bar padding-right-100px padding-left-100px">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="header-top-content">
+                        <div class="header-left">
+                            <ul class="list-items">
+                                <li><a href="#"><i class="la la-phone mr-1"></i>1533-7901</a></li>
+                                <li><a href="#"><i class="la la-envelope mr-1"></i>info@wisekey.co.kr</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="header-top-content">
+                        <div class="header-right d-flex align-items-center justify-content-end">
+                            <div class="header-right-action">
+                                <a href="#" class="theme-btn theme-btn-small theme-btn-transparent mr-1" data-toggle="modal" data-target="#signupPopupForm">회원가입</a>
+                                 <a href="#" class="theme-btn theme-btn-small" data-toggle="modal" data-target="#loginPopupForm">로그인</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu-wrapper padding-right-100px padding-left-100px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-wrapper">
+                        <a href="#" class="down-button"><i class="la la-angle-down"></i></a>
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                            <div class="menu-toggler">
+                                <i class="la la-bars"></i>
+                                <i class="la la-times"></i>
+                            </div><!-- end menu-toggler -->
+                        </div><!-- end logo -->
+                        <div class="main-menu-content">
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#">호텔에 살다</a></li>
+                                    <li><a href="#">여행을 선물하다</a></li>
+                                    <li><a href="hotel-list.html">호텔에 머물다</a></li>
+                                </ul>
+                            </nav>
+                        </div><!-- end main-menu-content -->
+                    </div><!-- end menu-wrapper -->
+                </div><!-- end col-lg-12 -->
+            </div><!-- end row -->
+        </div><!-- end container-fluid -->
+    </div><!-- end header-menu-wrapper -->
+</header>
+<!-- ================================
+         END HEADER AREA
+================================= -->
+
+<!-- ================================
+    START BREADCRUMB AREA
+================================= -->
+<section class="breadcrumb-area bread-bg-7">
+    <div class="breadcrumb-wrap">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="breadcrumb-content">
+                        <div class="section-heading">
+                            <h2 class="sec__title text-white">호텔에 머물다</h2>
+                        </div>
+                    </div><!-- end breadcrumb-content -->
+                </div><!-- end col-lg-6 -->
+                <div class="col-lg-6">
+                    <div class="breadcrumb-list text-right">
+                        <ul class="list-items">
+                            <li><a href="index.html">Home</a></li>
+                            <li>Hotel</li>
+                            <li>호텔에 머물다</li>
+                        </ul>
+                    </div><!-- end breadcrumb-list -->
+                </div><!-- end col-lg-6 -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end breadcrumb-wrap -->
+    <div class="bread-svg-box">
+        <svg class="bread-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><polygon points="100 0 50 10 0 0 0 10 100 10"></polygon></svg>
+    </div><!-- end bread-svg -->
+</section><!-- end breadcrumb-area -->
+<!-- ================================
+    END BREADCRUMB AREA
+================================= -->
+
+<!-- ================================
+    START CARD AREA
+================================= -->
+<section class="card-area section--padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="filter-wrap margin-bottom-30px">
+                    <div class="filter-top d-flex align-items-center justify-content-between pb-4">
+                        <div>
+                            <h3 class="title font-size-24">호텔에 머물다</h3>
+                            <p class="font-size-14"><span class="mr-1 pt-1">원하는 호텔을 예약하세요</span></p>
+                        </div>
+                    </div><!-- end filter-top -->
+                    <div class="filter-bar d-flex align-items-center justify-content-between">
+                        <div class="filter-bar-filter d-flex flex-wrap align-items-center">
+                        </div><!-- end filter-bar-filter -->
+                        <div class="select-contain">
+                            <select class="select-contain-select">
+                                <option value="1">전체</option>
+                                <option value="2">인기호텔순</option>
+                                <option value="3">높은가격순</option>
+                                <option value="4">낮은가격순</option>
+                                <option value="5">할인율높은순</option>
+                            </select>
+                        </div><!-- end select-contain -->
+                    </div><!-- end filter-bar -->
+                </div><!-- end filter-wrap -->
+            </div><!-- end col-lg-12 -->
+        </div><!-- end row -->
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card-item card-item-list">
+                    <div class="card-img">
+                        <a href="hotel-room.html" class="d-block">
+                            <img src="images/hotel_01.jpg" alt="hotel-img">
+                        </a>
+                        <span class="badge">20%할인</span>
+                        <div class="add-to-wishlist icon-element" data-toggle="tooltip" data-placement="top" title="Bookmark">
+                            <i class="la la-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="hotel-room.html">신화 제주신화월드 호텔앤리조트</a></h3>
+                        <p class="card-meta">신화역사로304번길 38, 안덕면, 서귀포시, 63522</p>
+                        <div class="card-rating">
+                            <span class="badge text-white">4.4/5</span>
+                            <span class="rating__text">(30개 리뷰)</span>
+                        </div>
+                        <div class="card-price d-flex align-items-center justify-content-between">
+                            <a href="hotel-room.html" class="btn-text font-size-18">자세히보기<i class="la la-angle-right"></i></a>
+                            <span><i class="la la-clock mr-1"></i>1 Days</span>
+                            <p>
+                                <span class="price__text text-right">1일이상 1박기준</span>
+                                <span class="price__num">₩150,000</span>
+                                <span class="price__text text-right">총 요금:₩165,000</span>
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- end card-item -->
+                <div class="card-item card-item-list">
+                    <div class="card-img">
+                        <a href="hotel-room.html" class="d-block">
+                            <img src="images/hotel_02.jpg" alt="hotel-img">
+                        </a>
+                        <div class="add-to-wishlist icon-element" data-toggle="tooltip" data-placement="top" title="Bookmark">
+                            <i class="la la-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="hotel-room.html">롯데 호텔 제주</a></h3>
+                        <p class="card-meta">중문관광로72번길 35</p>
+                        <div class="card-rating">
+                            <span class="badge text-white">4.4/5</span>
+                            <span class="rating__text">(30개 리뷰)</span>
+                        </div>
+                        <div class="card-price d-flex align-items-center justify-content-between">
+                            <a href="hotel-room.html" class="btn-text font-size-18">자세히보기<i class="la la-angle-right"></i></a>
+                            <span><i class="la la-clock mr-1"></i>1 Days</span>
+                            <p>
+                                <span class="price__text text-right">1일이상 1박기준</span>
+                                <span class="price__num">₩410,000</span>
+                                <span class="price__text text-right">총 요금:₩496,100</span>
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- end card-item -->
+                <div class="card-item card-item-list">
+                    <div class="card-img">
+                        <a href="hotel-room.html" class="d-block">
+                            <img src="images/hotel_03.jpg" alt="hotel-img">
+                        </a>
+                        <span class="badge">저희사이트에서 2개남았어요</span>
+                        <div class="add-to-wishlist icon-element" data-toggle="tooltip" data-placement="top" title="Bookmark">
+                            <i class="la la-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="hotel-room.html">메리어트관 제주신화월드 호텔앤리조트</a></h3>
+                        <p class="card-meta">신화역사로304번길 38, 안덕면</p>
+                        <div class="card-rating">
+                            <span class="badge text-white">4.4/5</span>
+                            <span class="rating__text">(30개 리뷰)</span>
+                        </div>
+                        <div class="card-price d-flex align-items-center justify-content-between">
+                            <a href="hotel-room.html" class="btn-text font-size-18">자세히보기<i class="la la-angle-right"></i></a>
+                            <span><i class="la la-clock mr-1"></i>1 Days</span>
+                            <p>
+                                <span class="price__text text-right">1일이상 1박기준</span>
+                                <span class="price__num">₩288,000</span>
+                                <span class="price__text text-right">총 요금:₩316,800</span>
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- end card-item -->
+                <div class="card-item card-item-list">
+                    <div class="card-img">
+                        <a href="hotel-room.html" class="d-block">
+                            <img src="images/hotel_04.jpg" alt="hotel-img">
+                        </a>
+                        <span class="badge">회원가제공</span>
+                        <div class="add-to-wishlist icon-element" data-toggle="tooltip" data-placement="top" title="Bookmark">
+                            <i class="la la-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="hotel-room.html">휘슬락 호텔</a></h3>
+                        <p class="card-meta">서부두 2길 26, 제주시,</p>
+                        <div class="card-rating">
+                            <span class="badge text-white">4.4/5</span>
+                            <span class="rating__text">(30개 리뷰)</span>
+                        </div>
+                        <div class="card-price d-flex align-items-center justify-content-between">
+                            <a href="hotel-room.html" class="btn-text font-size-18">자세히보기<i class="la la-angle-right"></i></a>
+                            <span><i class="la la-clock mr-1"></i>1 Days</span>
+                            <p>
+                                <span class="price__text text-right">1일이상 1박기준</span>
+                                <span class="price__num">₩150,000</span>
+                                <span class="price__text text-right">총 요금:₩165,000</span>
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- end card-item -->
+                <div class="card-item card-item-list">
+                    <div class="card-img">
+                        <a href="hotel-room.html" class="d-block">
+                            <img src="images/hotel_05.jpg" alt="hotel-img">
+                        </a>
+                        <div class="add-to-wishlist icon-element" data-toggle="tooltip" data-placement="top" title="Bookmark">
+                            <i class="la la-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="hotel-room.html">제주신라호텔</a></h3>
+                        <p class="card-meta">중문관광로72번길 75, 서귀포시</p>
+                        <div class="card-rating">
+                            <span class="badge text-white">4.4/5</span>
+                            <span class="rating__text">(30개 리뷰)</span>
+                        </div>
+                        <div class="card-price d-flex align-items-center justify-content-between">
+                            <a href="hotel-room.html" class="btn-text font-size-18">자세히보기<i class="la la-angle-right"></i></a>
+                            <span><i class="la la-clock mr-1"></i>1 Days</span>
+                            <p>
+                                <span class="price__text text-right">1일이상 1박기준</span>
+                                <span class="price__num">₩550,000</span>
+                                <span class="price__text text-right">총 요금:₩605,000</span>
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- end card-item -->
+                <div class="card-item card-item-list">
+                    <div class="card-img">
+                        <a href="hotel-room.html" class="d-block">
+                            <img src="images/hotel_06.jpg" alt="hotel-img">
+                        </a>
+                        <div class="add-to-wishlist icon-element" data-toggle="tooltip" data-placement="top" title="Bookmark">
+                            <i class="la la-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="hotel-room.html">오션스위츠 제주호텔</a></h3>
+                        <p class="card-meta">탑동해안로 74, 제주시</p>
+                        <div class="card-rating">
+                            <span class="badge text-white">4.4/5</span>
+                            <span class="rating__text">(30개 리뷰)</span>
+                        </div>
+                        <div class="card-price d-flex align-items-center justify-content-between">
+                            <a href="hotel-room.html" class="btn-text font-size-18">자세히보기<i class="la la-angle-right"></i></a>
+                            <span><i class="la la-clock mr-1"></i>1 Days</span>
+                            <p>
+                                <span class="price__text text-right">1일이상 1박기준</span>
+                                <span class="price__num">₩130,909</span>
+                                <span class="price__text text-right">총 요금:₩144,000</span>
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- end card-item -->
+                <div class="card-item card-item-list">
+                    <div class="card-img">
+                        <a href="hotel-room.html" class="d-block">
+                            <img src="images/hotel_07.jpg" alt="hotel-img">
+                        </a>
+                        <div class="add-to-wishlist icon-element" data-toggle="tooltip" data-placement="top" title="Bookmark">
+                            <i class="la la-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="hotel-room.html">라마다 플라자 제주 오션 프론트</a></h3>
+                        <p class="card-meta">탑동로 66, 제주시</p>
+                        <div class="card-rating">
+                            <span class="badge text-white">4.4/5</span>
+                            <span class="rating__text">(30개 리뷰)</span>
+                        </div>
+                        <div class="card-price d-flex align-items-center justify-content-between">
+                            <a href="hotel-room.html" class="btn-text font-size-18">자세히보기<i class="la la-angle-right"></i></a>
+                            <span><i class="la la-clock mr-1"></i>1 Days</span>
+                            <p>
+                                <span class="price__text text-right">1일이상 1박기준</span>
+                                <span class="price__num">₩150,000</span>
+                                <span class="price__text text-right">총 요금:₩165,000</span>
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- end card-item -->
+                <div class="card-item card-item-list">
+                    <div class="card-img">
+                        <a href="hotel-room.html" class="d-block">
+                            <img src="images/hotel_04.jpg" alt="hotel-img">
+                        </a>
+                        <span class="badge">회원가제공</span>
+                        <div class="add-to-wishlist icon-element" data-toggle="tooltip" data-placement="top" title="Bookmark">
+                            <i class="la la-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="hotel-room.html">휘슬락 호텔</a></h3>
+                        <p class="card-meta">서부두 2길 26, 제주시,</p>
+                        <div class="card-rating">
+                            <span class="badge text-white">4.4/5</span>
+                            <span class="rating__text">(30개 리뷰)</span>
+                        </div>
+                        <div class="card-price d-flex align-items-center justify-content-between">
+                            <a href="hotel-room.html" class="btn-text font-size-18">자세히보기<i class="la la-angle-right"></i></a>
+                            <span><i class="la la-clock mr-1"></i>1 Days</span>
+                            <p>
+                                <span class="price__text text-right">1일이상 1박기준</span>
+                                <span class="price__num">₩150,000</span>
+                                <span class="price__text text-right">총 요금:₩165,000</span>
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- end card-item -->
+                <div class="card-item card-item-list">
+                    <div class="card-img">
+                        <a href="hotel-room.html" class="d-block">
+                            <img src="images/hotel_05.jpg" alt="hotel-img">
+                        </a>
+                        <div class="add-to-wishlist icon-element" data-toggle="tooltip" data-placement="top" title="Bookmark">
+                            <i class="la la-heart-o"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="hotel-room.html">제주신라호텔</a></h3>
+                        <p class="card-meta">중문관광로72번길 75, 서귀포시</p>
+                        <div class="card-rating">
+                            <span class="badge text-white">4.4/5</span>
+                            <span class="rating__text">(30개 리뷰)</span>
+                        </div>
+                        <div class="card-price d-flex align-items-center justify-content-between">
+                            <a href="hotel-room.html" class="btn-text font-size-18">자세히보기<i class="la la-angle-right"></i></a>
+                            <span><i class="la la-clock mr-1"></i>1 Days</span>
+                            <p>
+                                <span class="price__text text-right">1일이상 1박기준</span>
+                                <span class="price__num">₩550,000</span>
+                                <span class="price__text text-right">총 요금:₩605,000</span>
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- end card-item -->
+            </div><!-- end col-lg-8 -->
+            <div class="col-lg-4">
+                <div class="sidebar mt-0">
+                    <div class="sidebar-widget">
+                        <h3 class="title stroke-shape">다른 호텔 검색</h3>
+                        <div class="sidebar-widget-item">
+                            <div class="contact-form-action">
+                                <form action="#">
+                                    <div class="input-box">
+                                        <label class="label-text">목적지 / 호텔이름</label>
+                                        <div class="form-group">
+                                            <span class="la la-map-marker form-icon"></span>
+                                            <input class="form-control" type="text" name="text" placeholder="예:신라호텔">
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label class="label-text">체크인 - 체크아웃</label>
+                                        <div class="form-group">
+                                            <span class="la la-calendar form-icon"></span>
+                                            <input class="date-picker-multiple form-control" type="text" name="daterange" readonly>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- end sidebar-widget-item -->
+                        <div class="sidebar-widget-item">
+                            <div class="qty-box mb-2 d-flex align-items-center justify-content-between">
+                                <label class="font-size-16">객실</label>
+                            </div><!-- end qty-box -->
+                            <div class="qty-box mb-2 d-flex align-items-center justify-content-between">
+                                <label class="font-size-16">성인</label>
+                                <div class="qtyBtn d-flex align-items-center">
+                                    <div class="qtyDec"><i class="la la-minus"></i></div>
+                                    <input type="text" name="qtyInput" value="2">
+                                    <div class="qtyInc"><i class="la la-plus"></i></div>
+                                </div>
+                            </div><!-- end qty-box -->
+                            <div class="qty-box mb-2 d-flex align-items-center justify-content-between">
+                                <label class="font-size-16">아동 <span>1-17 years old</span></label>
+                                <div class="qtyBtn d-flex align-items-center">
+                                    <div class="qtyDec"><i class="la la-minus"></i></div>
+                                    <input type="text" name="qtyInput" value="0">
+                                    <div class="qtyInc"><i class="la la-plus"></i></div>
+                                </div>
+                            </div><!-- end qty-box -->
+                        </div><!-- end sidebar-widget-item -->
+                        <div class="btn-box pt-2">
+                            <a href="#" class="theme-btn">검색</a>
+                        </div>
+                    </div><!-- end sidebar-widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="title stroke-shape">1박당 요금</h3>
+                        <div class="sidebar-price">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r1">
+                                <label for="r1">₩80,000 미만</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r2">
+                                <label for="r2">₩80,000 ~ ₩160,000</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r3">
+                                <label for="r3">₩160,000 ~ ₩270,000</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r4">
+                                <label for="r4">₩270,000 ~ ₩380,000</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r5">
+                                <label for="r5">₩380,000 이상</label>
+                            </div>
+                        </div>
+                    </div><!-- end sidebar-widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="title stroke-shape">고객 평점</h3>
+                        <div class="sidebar-category">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r6">
+                                <label for="r6">전체</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r7">
+                                <label for="r7">최고 좋음 4.5+</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r8">
+                                <label for="r8">매우 좋은4+</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="r9">
+                                <label for="r9">좋음3.5+</label>
+                            </div>
+                        </div>
+                    </div><!-- end sidebar-widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="title stroke-shape">숙박 시설 등급</h3>
+                        <div class="sidebar-review">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="s1">
+                                <label for="s1">
+                                    <span class="ratings d-flex align-items-center">
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <span class="color-text-3 font-size-13 ml-1">(5)</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="s2">
+                                <label for="s2">
+                                    <span class="ratings d-flex align-items-center">
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star-o"></i>
+                                        <span class="color-text-3 font-size-13 ml-1">(4)</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="s3">
+                                <label for="s3">
+                                    <span class="ratings d-flex align-items-center">
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star-o"></i>
+                                        <i class="la la-star-o"></i>
+                                        <span class="color-text-3 font-size-13 ml-1">(3)</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="s4">
+                                <label for="s4">
+                                    <span class="ratings d-flex align-items-center">
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star-o"></i>
+                                        <i class="la la-star-o"></i>
+                                        <i class="la la-star-o"></i>
+                                        <span class="color-text-3 font-size-13 ml-1">(2)</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="custom-checkbox mb-0">
+                                <input type="checkbox" id="s5">
+                                <label for="s5">
+                                    <span class="ratings d-flex align-items-center">
+                                        <i class="la la-star"></i>
+                                        <i class="la la-star-o"></i>
+                                        <i class="la la-star-o"></i>
+                                        <i class="la la-star-o"></i>
+                                        <i class="la la-star-o"></i>
+                                        <span class="color-text-3 font-size-13 ml-1">(1)</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div><!-- end sidebar-widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="title stroke-shape">숙박 시설 유형</h3>
+                        <div class="sidebar-category">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="ht1">
+                                <label for="ht1">호텔 리조트</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="ht2">
+                                <label for="ht2">콘도 리조트</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="ht3">
+                                <label for="ht3">레지던스</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="ht4">
+                                <label for="ht4">펜션</label>
+                            </div>
+                            <div class="collapse" id="hotelThemeMenu">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="ht5">
+                                    <label for="ht5">호스텔</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="ht6">
+                                    <label for="ht6">콘도</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="ht7">
+                                    <label for="ht7">빌라</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="ht8">
+                                    <label for="ht8">살레</label>
+                                </div>
+                            </div>
+                            <a class="btn-text" data-toggle="collapse" href="#hotelThemeMenu" role="button" aria-expanded="false" aria-controls="hotelThemeMenu">
+                                <span class="show-more">더 보기 <i class="la la-angle-down"></i></span>
+                                <span class="show-less">간단히 보기 <i class="la la-angle-up"></i></span>
+                            </a>
+                        </div>
+                    </div><!-- end sidebar-widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="title stroke-shape">편의시설 서비스</h3>
+                        <div class="sidebar-category">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="f1">
+                                <label for="f1">스파</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="chb12">
+                                <label for="chb12">반려동물 동반 가능</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="f2">
+                                <label for="f2">아침 식사 포함</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="f3">
+                                <label for="f3">온수 욕조</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="f4">
+                                <label for="f4">주방</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="f5">
+                                <label for="f5">수영장</label>
+                            </div>
+                            <div class="collapse" id="facilitiesMenu">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f6">
+                                    <label for="f6">무료 공항 셔틀</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f7">
+                                    <label for="f7">무료 WiFi</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f8">
+                                    <label for="f8">세탁기 및 건조기</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f9">
+                                    <label for="f9">워터파크</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f10">
+                                    <label for="f10">에어컨</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f11">
+                                    <label for="f11">바다전망</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f12">
+                                    <label for="f12">레스토랑</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f13">
+                                    <label for="f13">주차</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f14">
+                                    <label for="f14">전기차 충전</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f15">
+                                    <label for="f15">야외 공간</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f16">
+                                    <label for="f16">올 인클루시브 요금제 이용가능</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f17">
+                                    <label for="f17">유아용 침대</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f18">
+                                    <label for="f18">피트니스 센터</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="f19">
+                                    <label for="f19">비지니스센터</label>
+                                </div>
+                            </div>
+                            <a class="btn-text" data-toggle="collapse" href="#facilitiesMenu" role="button" aria-expanded="false" aria-controls="facilitiesMenu">
+                                <span class="show-more">더 보기 <i class="la la-angle-down"></i></span>
+                                <span class="show-less">간단히 보기 <i class="la la-angle-up"></i></span>
+                            </a>
+                        </div>
+                    </div><!-- end sidebar-widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="title stroke-shape">장애인 편의 시설</h3>
+                        <div class="sidebar-category">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="dt1">
+                                <label for="dt1">휠체어로 이용 가능한 주차장</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="dt2">
+                                <label for="dt2">엘리베이터</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="dt3">
+                                <label for="dt3">장애인 지원 욕실</label>
+                            </div>
+                            <div class="collapse" id="disabledFacilitiesMenu">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="dt4">
+                                    <label for="dt4">롤인 샤워</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="dt5">
+                                    <label for="dt5">객실 내 장애인 편의 시설</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="dt6">
+                                    <label for="dt6">장애인 안내 동물 동반 가능</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="dt7">
+                                    <label for="dt7">출입구까지 통로에 계단 없음</label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="dt8">
+                                    <label for="dt8">수화 가능 직원</label>
+                                </div>
+                            </div>
+                            <a class="btn-text" data-toggle="collapse" href="#disabledFacilitiesMenu" role="button" aria-expanded="false" aria-controls="disabledFacilitiesMenu">
+                                <span class="show-more">더 보기 <i class="la la-angle-down"></i></span>
+                                <span class="show-less">간단히 보기 <i class="la la-angle-up"></i></span>
+                            </a>
+                        </div>
+                    </div><!-- end sidebar-widget -->
+                </div><!-- end sidebar -->
+            </div><!-- end col-lg-4 -->
+        </div><!-- end row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="btn-box mt-3 text-center">
+                    <button type="button" class="theme-btn"><i class="la la-refresh mr-1"></i>호텔 더보기</button>
+                </div><!-- end btn-box -->
+            </div><!-- end col-lg-12 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end card-area -->
+<!-- ================================
+    END CARD AREA
+================================= -->
+
+<div class="section-block"></div>
+
+<!-- ================================
+    START CTA AREA
+================================= -->
+<section class="cta-area subscriber-area section-bg-2 padding-top-60px padding-bottom-60px">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="section-heading padding-top-30px">
+                    <h3 class="sec__title font-size-30 text-white text-center">앱에서 즐기는 더 많은 혜택</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="btn-box padding-top-30px">
+                    <a href="https://apps.apple.com/us/app/id1605907716" target="_blank" class="d-inline-block mr-3">
+                        <img src="images/app-store.png" alt="">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.swave.wafflestay" target="_blank" class="d-inline-block">
+                        <img src="images/google-play.png" alt="">
+                    </a>
+                </div>        
+            </div>
+        </div>
+    </div>
+</section><!-- end cta-area -->
+<!-- ================================
+    END CTA AREA
+================================= -->
+
+<!-- ================================
+       START FOOTER AREA
+================================= -->
+<section class="footer-area section-bg padding-top-100px padding-bottom-30px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 responsive-column">
+                <div class="footer-item">
+                    <div class="footer-logo padding-bottom-30px">
+                        <a href="index.html" class="foot__logo"><img src="images/logo.png" alt="logo"></a>
+                    </div><!-- end logo -->
+                    <ul class="list-items pt-3">
+                        <li>경기도 안양시 동안구 엘에스로 116번길 118, 안양2차SK V1센터 1030ㅣ+82-1533-7901</li>
+                    </ul>
+                </div><!-- end footer-item -->
+            </div>
+        </div><!-- end row -->
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="term-box footer-item">
+                    <ul class="list-items list--items d-flex align-items-center">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </div><!-- end col-lg-8 -->
+             <div class="col-lg-4">
+                <div class="footer-social-box text-right">
+                    <ul class="social-profile">
+                        <li><a href="https://blog.naver.com/hellowisekey" target="_blank"><img src="images/n_blog.png"></a></li>
+                        <li><a href="https://instagram.com/wafflestay" target="_blank"><img src="images/instagram_logo.png"></a></li>
+                        <li><a href="https://pf.kakao.com/_HBAxeb" target="_blank"><img src="images/kakao_ch.png"></a></li>
+                    </ul>
+                </div>
+            </div><!-- end col-lg-4 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+    <div class="section-block mt-4"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="copy-right padding-top-30px">
+                    <p class="copy__desc text-center">
+                         Copyright &copy;2022. Wafflestay
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- end footer-area -->
+<!-- ================================
+       START FOOTER AREA
+================================= -->
+
+
+<!-- start back-to-top -->
+<div id="back-to-top">
+    <i class="la la-angle-up" title="Go top"></i>
+</div>
+<!-- end back-to-top -->
+
+<!-- end modal-shared -->
+<div class="modal-popup">
+    <div class="modal fade" id="signupPopupForm" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title" id="exampleModalLongTitle">회원가입</h5>
+                        <p class="font-size-14">와플스테이에 오신것을 환영합니다.</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-action">
+                        <form method="post">
+                            <div class="input-box">
+                                <label class="label-text">아이디(이메일주소)</label>
+                                <div class="form-group">
+                                    <span class="la la-envelope form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="이메일주소 입력">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">성(한글)</label>
+                                <div class="form-group">
+                                    <span class="la la-user form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="성 입력">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">이름(한글)</label>
+                                <div class="form-group">
+                                    <span class="la la-user form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="이름 입력">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">비밀번호</label>
+                                <div class="form-group">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="영문숫자포함 6자이상">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">비밀번호 확인</label>
+                                <div class="form-group">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="영문숫자포함 6자이상">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="btn-box pt-3 pb-4">
+                                <button type="button" class="theme-btn w-100">회원가입</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end modal-popup -->
+
+<!-- end modal-shared -->
+<div class="modal-popup">
+    <div class="modal fade" id="loginPopupForm" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title" id="exampleModalLongTitle2">로그인</h5>
+                        <p class="font-size-14"></p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-action">
+                        <form method="post">
+                            <div class="input-box">
+                                <label class="label-text">아이디(이메일주소)</label>
+                                <div class="form-group">
+                                    <span class="la la-envelope form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="이메일주소 입력">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">비밀번호</label>
+                                <div class="form-group mb-2">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="비밀번호입력">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="custom-checkbox mb-0">
+                                        <input type="checkbox" id="rememberchb">
+                                        <label for="rememberchb">Remember me</label>
+                                    </div>
+                                    <p class="forgot-password">
+                                        <a href="recover.html">비밀번호찾기?</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn-box pt-3 pb-4">
+                                <button type="button" class="theme-btn w-100">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end modal-popup -->
+
+<!-- Template JS Files -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.countTo.min.js"></script>
+<script src="js/animated-headline.js"></script>
+<script src="js/jquery.ripples-min.js"></script>
+<script src="js/quantity-input.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
